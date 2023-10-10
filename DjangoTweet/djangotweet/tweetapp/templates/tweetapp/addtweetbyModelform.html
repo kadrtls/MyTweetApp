@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block content%}
+<h1>Add Tweet by Model from Page</h1>
+<div class="container tweetform">
+    <form action="" method="post">
+            {% csrf_token %}
+            {{form}}
+            <button type="submit" class="btn btn-primary">Send Tweet</button>
+        </form>
+    </div>
+
+
+{%endblock%}
